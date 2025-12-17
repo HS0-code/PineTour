@@ -1,0 +1,36 @@
+#hero {
+  height: 773px;
+  background-image: url("../../public/Hero.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#hero h3 {
+  color: #e8edf2;
+  font-size: 80px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -4px;
+}
+
+#hero h1 {
+  color: white;
+  font-size: 250px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -4px;
+}
+
+#hero p {
+  color: white;
+  font-size: 64px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}

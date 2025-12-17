@@ -1,0 +1,35 @@
+#header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+#navbar {
+  display: flex;
+  gap: 20px;
+}
+
+#navbar a {
+  width: 100px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+#profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

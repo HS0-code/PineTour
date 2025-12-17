@@ -1,0 +1,36 @@
+#map-container {
+  width: 100%;
+  height: 980px;
+  background-image: url(../../public/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#map-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map-container h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#map-container p {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#map-list {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

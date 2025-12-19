@@ -68,8 +68,24 @@ const Pricing = () => {
               <li>All meals included (local cuisine)</li>
             </ul>
           </div>
-
           <button className="pricing-btn">Select package</button>
+        </div>
+      </div>
+      <div id="pricing-footer">
+        <div id="pricing-footer-left">
+          <div className="pricing-footer-pill">
+            <img src="/facebook.png" alt="Facebook" />
+            Facebook
+          </div>
+
+          <div className="pricing-footer-pill">
+            <img src="/instagram.png" alt="Instagram" />
+            Instagram
+          </div>
+        </div>
+
+        <div id="pricing-footer-right">
+          <img src="/tour.png" alt="Tour Logo" />
         </div>
       </div>
     </div>

@@ -147,9 +147,9 @@
 
 /* Tablets */
 @media (max-width: 1024px) {
-  #pricing-section {
+  /* #pricing-section {
     padding: 60px 20px;
-  }
+  } */
 
   .pricing-card {
     width: 320px;

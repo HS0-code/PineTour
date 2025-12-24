@@ -3,7 +3,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div id="header">
-      <img src="logo.png" alt="" width="100px" />
+      <img src="tour.png" alt="" width="100px" />
 
       <div id="navbar">
         <a href="/">Home</a>

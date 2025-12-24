@@ -1,5 +1,4 @@
 import "./Map.css";
-
 import MapList from "./MapList";
 
 const Map = () => {
@@ -13,30 +12,30 @@ const Map = () => {
       <div id="map-list">
         <MapList
           name="Sukhbaatar square"
-          location="Ulaanbaatar"
+          location="Ulaanbator"
           day="1"
-          color="#FEE09D"
+          color="#EEE9D9"
         />
         <MapList
-          name="Amarbayasgalant monastery"
+          name="Amarbaysgalant monastery"
           location="Bulgan"
           day="2"
-          color="#BB8BC1"
+          color="#8BB8C1"
         />
         <MapList
-          name="Khorign toggo"
+          name="Khorgiin togoo"
           location="Arkhangai"
           day="3"
-          color="#AADD87"
+          color="#AAD8D7"
         />
         <MapList
           name="Terkhiin tsagaan lake"
           location="Arkhangai"
           day="4"
-          color="#8BBCD0"
+          color="#8BC0BD"
         />
         <MapList
-          name="Khuvsgul Lake"
+          name="Khuvsgul lake"
           location="Khuvsgul"
           day="5"
           color="#97CCE0"

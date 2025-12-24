@@ -1,92 +1,69 @@
+import React from "react";
+import PricingCard from "./PricingCard";
 import "./Pricing.css";
 
 const Pricing = () => {
   return (
-    <div id="pricing-section">
-      <h1 id="pricing-title">Pricing of Our Agency</h1>
-      <p id="pricing-subtitle">Choose A Package That's Right For You</p>
+    <div
+      style={{
+        backgroundColor: "#9FC6DE",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "100%",
+        padding: "100px 0",
+      }}
+    >
+      <h1 id="title">Pricing of Our Agency</h1>
 
-      <div id="pricing-cards">
-        <div className="pricing-card">
-          <div className="pricing-heart">❤</div>
+      <h3 style={{ fontSize: 20, fontWeight: 500, color: "#18181B" }}>
+        Choose a package that’s right for you
+      </h3>
 
-          <h3 className="pricing-card-title">Budget Package</h3>
-          <h1 className="pricing-price">500$</h1>
-          <p className="pricing-tagline">Essentials Covered</p>
-
-          <div className="pricing-includes">
-            <p>Includes:</p>
-            <ul>
-              <li>Group transportation (shared van/bus)</li>
-              <li>Standard accommodation (yurt or guesthouse)</li>
-              <li>Guided lake tour</li>
-              <li>1 meal per day (breakfast)</li>
-            </ul>
-          </div>
-
-          <button className="pricing-btn">Select package</button>
-        </div>
-
-        <div className="pricing-card">
-          <div className="pricing-heart">❤</div>
-
-          <h3 className="pricing-card-title">Standard Package</h3>
-
-          <div className="pricing-price-row">
-            <h1 className="pricing-price">800$</h1>
-            {true && <span className="pricing-popular">Popular</span>}
-          </div>
-
-          <p className="pricing-tagline">Balanced Adventure</p>
-
-          <div className="pricing-includes">
-            <p>Includes:</p>
-            <ul>
-              <li>Comfortable transportation (mini-bus)</li>
-              <li>Mid-range accommodation (private yurt or lodge)</li>
-              <li>Guided lake tour + nearby hiking</li>
-              <li>2 meals per day (breakfast and dinner)</li>
-            </ul>
-          </div>
-
-          <button className="pricing-btn">Select package</button>
-        </div>
-
-        <div className="pricing-card">
-          <div className="pricing-heart">❤</div>
-
-          <h3 className="pricing-card-title">Luxury Package</h3>
-          <h1 className="pricing-price">1200$</h1>
-          <p className="pricing-tagline">Ultimate Comfort</p>
-
-          <div className="pricing-includes">
-            <p>Includes:</p>
-            <ul>
-              <li>Private transportation (SUV)</li>
-              <li>Luxury accommodation (lakefront lodge)</li>
-              <li>Guided tours (lake + reindeer herder experience)</li>
-              <li>All meals included (local cuisine)</li>
-            </ul>
-          </div>
-          <button className="pricing-btn">Select package</button>
-        </div>
-      </div>
-      <div id="pricing-footer">
-        <div id="pricing-footer-left">
-          <div className="pricing-footer-pill">
-            <img src="/facebook.png" alt="Facebook" />
-            Facebook
-          </div>
-
-          <div className="pricing-footer-pill">
-            <img src="/instagram.png" alt="Instagram" />
-            Instagram
-          </div>
-        </div>
-
-        <div id="pricing-footer-right">
-          <img src="/tour.png" alt="Tour Logo" />
-        </div>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "20px",
+          justifyContent: "center",
+        }}
+      >
+        <PricingCard
+          price="500"
+          packageType="Budget"
+          description="Essentials Covered"
+          popular={false}
+          includes={[
+            "Group transportation (shared van/bus)",
+            "Standard accommodation (yurt or guesthouse)",
+            "Guided lake tour",
+            "1 meal per day (breakfast)",
+          ]}
+        />
+        <PricingCard
+          price="800"
+          packageType="Standard"
+          description="Balanced Adventure"
+          popular={true}
+          includes={[
+            "Comfortable transportation (mini-bus)",
+            "Mid-range accommodation (private yurt or lodge)",
+            "Guided lake tour + nearby hiking",
+            "2 meals per day (breakfast and dinner)",
+          ]}
+        />
+        <PricingCard
+          price="1200"
+          packageType="Luxury"
+          description="Ultimate Comfort"
+          popular={false}
+          includes={[
+            "Private transportation (SUV)",
+            "Luxury accommodation (lakefront lodge)",
+            "Guided tours (lake + reindeer herder experience)",
+            "All meals included (local cuisine)",
+          ]}
+        />
       </div>
     </div>
   );

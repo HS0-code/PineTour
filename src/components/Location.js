@@ -1,6 +1,6 @@
 import Card from "./Card";
 import "./Location.css";
- 
+
 const Location = () => {
   return (
     <div id="card-section">
@@ -11,5 +11,5 @@ const Location = () => {
     </div>
   );
 };
- 
+
 export default Location;
